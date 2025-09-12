@@ -120,7 +120,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[url('assets/images/para.png')] h-screen">
+      <div className="bg-[url('assets/images/para.png')] h-screen bg-no-repeat bg-cover bg-screen mt-5">
         <div className="flex justify-center items-center h-screen">
           <p className="text-[30px] text-white">P O R T F O L I O</p>
         </div>
@@ -164,23 +164,23 @@ export default function Home() {
         <div className="h-80 w-80 ">
           <img src="assets/images/map.jpg" alt="map" />
         </div>
-        <div className="flex flex-col h-10 w-10 mx-5">
+        <div className="flex flex-col  mx-5">
           <div>
             <div className="mb-5">
               <div className="flex">
-                <img src="assets/images/location.png" alt="location" />
+                <img src="assets/images/location.png" alt="location" className="w-10 h-10" />
                 <p className="ml-2 text-2xl text-gray-400"> Chicago,US</p>
               </div>
             </div>
             <div className="mb-5">
               <div className="flex">
-                <img src="assets/images/phone-call.png" alt="phone-call" />
+                <img src="assets/images/phone-call.png" alt="phone-call" className="w-10 h-10" />
                 <p className="ml-2 text-2xl text-gray-400">Phone:+00151515</p>
               </div>
             </div>
             <div>
               <div className="flex">
-                <img src="assets/images/email.png" alt="email" />
+                <img src="assets/images/email.png" alt="email" className="w-10 h-10" />
                 <p className="ml-2 text-2xl text-gray-400">
                   Email:mail@mail.com
                 </p>
@@ -188,16 +188,16 @@ export default function Home() {
             </div>
             <div>
               <div>
-                <p className=" text-gray-400 mb-5">
-                  Swingbyforacupof
+                <p className="flex text-gray-400 mb-5 gap-3">
+                  Swing by for a cup of 
                   <span>
                     <img
                       src="assets/images/cup.png"
                       alt="email"
-                      className="h-3 w-3"
+                      className="w-5 h-5"
                     />
                   </span>
-                  ,orleavemeanote:
+                  ,or leave me a note:
                 </p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function Home() {
             </div>
             <div className="my-5 ">
               <button className=" p-2 bg-black text-white hover:bg-gray-300 hover:text-black duration-300 cursor-pointer">
-                SENDMESSAGE
+                SEND MESSAGE
               </button>
             </div>
           </div>
