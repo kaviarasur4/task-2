@@ -215,16 +215,16 @@ export default function Home() {
                   type="text"
                   placeholder="Name"
                   required
-                  className="p-3 w-60  border border-gray-400 mr-6 "
+                  className="p-3 w-60  border border-gray-400 mr-6 focus:outline-0 "
                 />
                 <input
                   type="text"
                   placeholder="Email"
                   required
-                  className="p-3 w-60  border border-gray-400 required"
+                  className="p-3 w-60  border border-gray-400 required focus:outline-0"
                 />
               </div>
-              <textarea name="" id="" className="p-3 w-110  border border-gray-400 required" placeholder='Message'></textarea>
+              <textarea name="" id="" className="p-3 w-110  border border-gray-400 required focus:outline-0" placeholder='Message'></textarea>
               <div className="my-5">
                 <button className=" p-2 bg-black text-white hover:bg-gray-300 hover:text-black duration-300 cursor-pointer">
                   SEND MESSAGE

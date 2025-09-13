@@ -4,7 +4,7 @@ export default function Fotter() {
   return (
     <div>
       <div>
-        <div className="bg-black/50 hover:bg-black w-full h-[300px] mt-60 ">
+        <div className="bg-black/50 hover:bg-black w-full h-[300px] mt-10 ">
           <div className="flex justify-center pt-10">
             <button className="p-2 bg-white hover:bg-gray-400">
               To the top
