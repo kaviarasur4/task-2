@@ -35,13 +35,13 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-4 my-10">
           <div>
-            <div className="flex mx-20">
+            <div className="flex mx-20 gap-2 mb-3">
               <img
                 src="assets/images/user.png"
                 alt="user"
-                className="h-8 w-8"
+                className="h-5 w-5"
               />
-              <p className="text-[15px] p-3">My Name</p>
+              <p className="text-[15px]">My Name</p>
             </div>
             <img
               src="assets/images/avatar_hat.png"
@@ -166,27 +166,27 @@ export default function Home() {
         <p className="text-bold text-2xl">WHERE I WORK</p>
         <p className="mt-5">I'd love your feedback!</p>
       </div>
-      <div className="grid grid-cols-3 mx-60">
-        <div className="h-100 w-100 ">
+      <div className="grid lg:grid-cols-2 grid-row lg:mx-40 mx-10">
+        <div className="h-90 w-90 ml-30">
           <img src="assets/images/map.jpg" alt="map" />
         </div>
         <div className="flex flex-col  mx-5">
           <div>
             <div className="mb-5">
               <div className="flex">
-                <img src="assets/images/location.png" alt="location" className="w-10 h-10" />
+                <img src="assets/images/location.png" alt="location" className="w-7 h-7" />
                 <p className="ml-2 text-2xl text-gray-400"> Chicago,US</p>
               </div>
             </div>
             <div className="mb-5">
               <div className="flex">
-                <img src="assets/images/phone-call.png" alt="phone-call" className="w-10 h-10" />
+                <img src="assets/images/phone-call.png" alt="phone-call" className="w-7 h-7" />
                 <p className="ml-2 text-2xl text-gray-400">Phone:+00151515</p>
               </div>
             </div>
             <div>
               <div className="flex">
-                <img src="assets/images/email.png" alt="email" className="w-10 h-10" />
+                <img src="assets/images/email.png" alt="email" className="w-7 h-7" />
                 <p className="ml-2 text-2xl text-gray-400">
                   Email:mail@mail.com
                 </p>
@@ -224,10 +224,11 @@ export default function Home() {
                   className="p-3 w-60  border border-gray-400 required focus:outline-0"
                 />
               </div>
-              <textarea name="" id="" className="p-3 w-110  border border-gray-400 required focus:outline-0" placeholder='Message'></textarea>
+              <textarea name="" id="" className="p-3 w-126  border border-gray-400 required focus:outline-0" placeholder='Message'></textarea>
               <div className="my-5">
-                <button className=" p-2 bg-black text-white hover:bg-gray-300 hover:text-black duration-300 cursor-pointer">
-                  SEND MESSAGE
+                <button className="flex items-center gap-2 p-3 bg-black text-white hover:bg-gray-300 hover:text-black duration-300 cursor-pointer">
+                  <img src="assets/images/arrow.png" alt="arrow" className="h-4 w-4"/>
+                  <span>SEND MESSAGE</span>
                 </button>
               </div>
             </form>
