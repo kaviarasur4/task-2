@@ -78,8 +78,10 @@ export default function Home() {
           />
           <p className="ml-10">P h o t o g r a p h y</p>
         </div>
-        <div className="bg-black/50 text-white p-2">
-          <p className="ml-120">90%</p>
+        <div className="w-full  bg-gray-300/50">
+          <div className="bg-black/50 text-white w-[90%] p-2">
+            <p className="ml-120  ">90%</p>
+          </div>
         </div>
         <div className="flex  cols-2 p-3">
           <img
@@ -89,8 +91,10 @@ export default function Home() {
           />
           <p className="ml-10">W e b D e s i g n</p>
         </div>
-        <div className="bg-black/50 text-white p-2">
-          <p className="ml-100">85%</p>
+        <div className="w-full  bg-gray-300/50">
+          <div className="bg-black/50 text-white w-[80%] p-2">
+            <p className="ml-100">85%</p>
+          </div>
         </div>
         <div className="flex  cols-2 p-3">
           <img
@@ -100,8 +104,10 @@ export default function Home() {
           />
           <p className="ml-10">P h o t o s h o p</p>
         </div>
-        <div className="bg-black/50 text-white p-2 mb-10">
-          <p className="ml-80">75%</p>
+        <div className="w-full  bg-gray-300/50">
+          <div className="bg-black/50 text-white p-2 w-[70%] mb-10">
+            <p className="ml-80">75%</p>
+          </div>
         </div>
       </div>
       <div>
@@ -161,7 +167,7 @@ export default function Home() {
         <p className="mt-5">I'd love your feedback!</p>
       </div>
       <div className="grid grid-cols-3 mx-60">
-        <div className="h-80 w-80 ">
+        <div className="h-100 w-100 ">
           <img src="assets/images/map.jpg" alt="map" />
         </div>
         <div className="flex flex-col  mx-5">
@@ -187,9 +193,9 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div>
-                <p className="flex text-gray-400 mb-5 gap-3">
-                  Swing by for a cup of 
+              <div className="">
+                <p className="flex text-gray-400 mb-5 gap-3 text-xl mt-2">
+                  Swing by for a cup of
                   <span>
                     <img
                       src="assets/images/cup.png"
@@ -203,34 +209,31 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="flex my-5">
-              <input
-                type="text"
-                placeholder="Name"
-                required
-                className="p-3 w-60  border border-gray-400 mr-6 "
-              />
-              <input
-                type="text"
-                placeholder="Email"
-                className="p-3 w-60  border border-gray-400 required"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Message"
-                className="p-3 w-110  border border-gray-400 required"
-              />
-            </div>
-            <div className="my-5 ">
-              <button className=" p-2 bg-black text-white hover:bg-gray-300 hover:text-black duration-300 cursor-pointer">
-                SEND MESSAGE
-              </button>
-            </div>
+            <form>
+              <div className="flex my-5">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  required
+                  className="p-3 w-60  border border-gray-400 mr-6 "
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  required
+                  className="p-3 w-60  border border-gray-400 required"
+                />
+              </div>
+              <textarea name="" id="" className="p-3 w-110  border border-gray-400 required" placeholder='Message'></textarea>
+              <div className="my-5">
+                <button className=" p-2 bg-black text-white hover:bg-gray-300 hover:text-black duration-300 cursor-pointer">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
